@@ -1,0 +1,115 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>yoo it's summer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            dancing: ['"Dancing Script"', 'cursive']
+          },
+          transitionDuration: {
+            DEFAULT: '300ms'
+          }
+        }
+      }
+    }
+  </script>
+  <body class="bg-yellow-100 font-dancing text-yellow-900">
+  
+    <div class="w-full flex items-center justify-center pt-10">
+      <header class="h-[50px] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 flex items-center fixed justify-between my-6 mx-4 px-4 py-1 rounded-md shadow-lg transition-all hover:shadow-yellow-300">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <h1 class="text-xl text-yellow-900 font-Pacifico">😎</h1>
+          <nav>
+            <a href="#hero" class="text-yellow-900 hover:text-yellow-500 px-4 transition-colors">Home</a>
+            <a href="#activities" class="text-yellow-900 hover:text-yellow-500 px-4 transition-colors">Activities</a>
+            <a href="#spin" class="text-yellow-900 hover:text-yellow-500 px-4 transition-colors">Spin the Sun</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+  
+    <main class="max-w-7xl mx-auto px-6 py-14">
+  
+      <section id="intro" class="grid md:grid-cols-2 gap-10 items-center mb-20">
+        <div>
+          <h2 class="text-5xl font-extrabold mb-6 leading-tight max-w-xl">
+            yay it's <span class="text-yellow-600">summer</span>
+          </h2>
+          <p class="text-yellow-700 text-lg mb-8 max-w-lg">
+            Explore sunshine-filled days with refreshing experiences, outdoor fun, and unforgettable moments.
+          <button class="bg-yellow-600 hover:bg-yellow-700 px-8 py-3 rounded-md text-yellow-50 font-semibold transition transform hover:scale-105 shadow-lg hover:shadow-yellow-400">
+            Get Started
+          </button>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover"/>
+        </div>
+      </section>
+  
+      <section id="activities" class="mb-20">
+        <h3 class="text-4xl font-bold mb-12 text-center tracking-wide">Fun Summer Activities</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-2xl hover:shadow-yellow-400 transition-all transform hover:scale-105">
+            <div class="text-6xl">🏖️</div>
+            <h4 class="text-2xl font-semibold">Beach Relaxation</h4>
+            <p class="text-yellow-800 text-center">Soak up the sun and enjoy the soothing sounds of waves.
+            <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition transform hover:scale-105">Learn More</button>
+          </div>
+          <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-2xl hover:shadow-yellow-400 transition-all transform hover:scale-105">
+            <div class="text-6xl">🌅</div>
+            <h4 class="text-2xl font-semibold">Sunset Watching</h4>
+            <p class="text-yellow-800 text-center">Find the perfect vantage point to witness breathtaking sunsets.
+            <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition transform hover:scale-105">Learn More</button>
+          </div>
+          <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-2xl hover:shadow-yellow-400 transition-all transform hover:scale-105">
+            <div class="text-6xl">🚴‍♂️</div>
+            <h4 class="text-2xl font-semibold">Cycle the Trails</h4>
+            <p class="text-yellow-800 text-center">Explore scenic cycling paths and embrace the thrill of adventure.
+            <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition transform hover:scale-105">Learn More</button>
+          </div>
+        </div>
+      </section>
+  
+      <section id="spin" class="text-center mb-20">
+        <h3 class="text-4xl font-bold mb-8 tracking-wide">Spin the Sun</h3>
+        <div class="inline-block text-yellow-600 text-[9rem] cursor-pointer select-none transition-transform duration-700 ease-in-out hover:rotate-[360deg] hover:scale-110">
+          🌞
+        </div>
+        <p class="mt-6 text-yellow-700 text-lg">Hover over the sun and watch it spin!
+      </section>
+  
+      <section id="picnic" class="relative mb-20 text-center text-yellow-50 py-28">
+        <div class="absolute inset-0 bg-black opacity-80 z-0"></div>
+        <div class="absolute inset-0 bg-cover bg-center z-[-1]" style="background-image: url('https://t3.ftcdn.net/jpg/10/78/75/10/360_F_1078751023_NXh8uXvZERvbXEp7CvVRHNcErxVWQdAS.jpg');"></div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h3 class="text-5xl font-bold mb-6">Try Picnicking with Your Friends!</h3>
+          <p class="text-xl max-w-xl mx-auto">Bring snacks, games, and good vibes to your favorite park or beach.
+        </div>
+      </section>
+  
+      <section id="parks" class="mb-20">
+        <h3 class="text-4xl font-bold mb-10 text-center tracking-wide">Ontario Parks to Explore</h3>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+          <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+            <span class="text-5xl">🌳</span>
+            <a href="https://search.brave.com/search?q=parks+in+delhi&source=desktop&view=full&map_src=c&bbox=77.136%2C28.572%2C77.329%2C28.722&loc_id=loc4ZOAR42W3VA6EBM3HQXMM6T2TIBVIZ4ACAAAAAAA%3D" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">D K</a>
+          </li>
+          <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+            <span class="text-5xl">🏞️</span>
+            <a href="https://search.brave.com/search?q=parks+in+delhi&source=desktop&view=full&map_src=c&bbox=77.136%2C28.572%2C77.329%2C28.722&loc_id=loc4P3SUC6UKWA6EAXGFQ57JETKTIDB2UAGKAAAAAAA%3D" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">Buddha garden</a>
+          </li>
+          <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+            <span class="text-5xl">🌊</span>
+            <a href="https://search.brave.com/search?q=parks+in+delhi&source=desktop&view=full&map_src=c&bbox=77.136%2C28.572%2C77.329%2C28.722&loc_id=loc47RJ2URGZUM6EACQPTJO7OS2TIBHRAWJPAAAAAAA%3D" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">Sindhi Park</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  </html>
